@@ -13,7 +13,7 @@ const pages = {
             <div class="hero-section animate__animated animate__fadeInDown">
                 <h1>Sua Festa Incrível Começa Aqui!</h1>
                 <p>Aluguel de kits "Pegue e Monte" para tornar seu evento inesquecível com elegância e economia.</p>
-                <a href="#orcamento" class="cta-button" data-page="orcamento">Veja Nossos Kits de Decoração</a>
+                <a href="https://glipearte.github.io/site/#portfolio" class="cta-button" data-page="portfolio">Veja Nossos Kits de Decoração</a>
             </div>
 
             <h2 class="animated-element">✨ Pegue e Monte: Como Funciona?</h2>
@@ -21,7 +21,7 @@ const pages = {
                 <div class="kit-card">
                     <i class="fas fa-box fa-3x" style="color: var(--color-primary);"></i>
                     <h3>1. Alugue</h3>
-                    <p>Escolha o kit ou as peças avulsas ideais em nosso portfólio.</p>
+                    <p>Escolha o kit ideal em nosso portfólio.</p>
                 </div>
                 <div class="kit-card">
                     <i class="fas fa-truck-loading fa-3x" style="color: var(--color-primary);"></i>
@@ -42,12 +42,12 @@ const pages = {
             <div class="about-details">
                 <div class="about-text animated-element">
                     <h2>Nossa Missão</h2>
-                    <p>A <strong>Glipearte Pegue e Monte</strong> nasceu com o objetivo de democratizar a decoração de festas, oferecendo kits e peças de alta qualidade com um custo-benefício imbatível. Acreditamos que todos merecem uma festa linda e memorável, e nosso modelo simplifica esse processo.</p>
+                    <p>A <strong>Glipearte Pegue e Monte</strong> nasceu com o objetivo de democratizar a decoração de festas, oferecendo kits de alta qualidade com um custo-benefício imbatível. Acreditamos que todos merecem uma festa linda e memorável, e nosso modelo simplifica esse processo.</p>
 
                     <h2>O Conceito Pegue e Monte</h2>
                     <p>O conceito é desenhado para a sua autonomia e economia:</p>
                     <ul>
-                        <li><i class="fas fa-hand-holding-box"></i> O cliente <strong>aluga</strong> os itens (kits prontos ou peças avulsas).</li>
+                        <li><i class="fas fa-hand-holding-box"></i> O cliente <strong>aluga</strong> os itens (kits prontos).</li>
                         <li><i class="fas fa-car"></i> Ele é responsável pela <strong>retirada</strong> na loja, <strong>transporte</strong>, <strong>montagem</strong> e <strong>devolução</strong> dos itens.</li>
                         <li><i class="fas fa-shield-alt"></i> É essencial que todos os itens sejam devolvidos <strong>sem avarias</strong>, sob pena de multa.</li>
                     </ul>
@@ -129,7 +129,7 @@ const pages = {
 function generateBudgetTable() {
     return `
         <table class="budget-table animated-element">
-            <caption>Kits Pegue e Monte e Peças Avulsas</caption>
+            <caption>Kits Pegue e Monte</caption>
             <thead>
                 <tr>
                     <th>Item/Kit</th>
@@ -354,5 +354,4 @@ window.addEventListener('DOMContentLoaded', () => {
     const initialPage = window.location.hash ? window.location.hash.substring(1) : 'home';
     history.replaceState({ page: initialPage }, '', `#${initialPage}`);
     renderPage(initialPage);
-
 });
