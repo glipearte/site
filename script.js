@@ -13,7 +13,7 @@ const pages = {
             <div class="hero-section animate__animated animate__fadeInDown">
                 <h1>Sua Festa Incrível Começa Aqui!</h1>
                 <p>Aluguel de kits "Pegue e Monte" para tornar seu evento inesquecível com elegância e economia.</p>
-                <a href="https://glipearte.github.io/site/#portfolio" class="cta-button" data-page="portfolio">Veja Nossos Kits de Decoração</a>
+                <a href="https://glipearte.github.io/site/#portfolio" class="cta-button" data-page="portfolio-section">Veja Nossos Kits de Decoração</a>
             </div>
 
             <h2 class="animated-element">✨ Pegue e Monte: Como Funciona?</h2>
