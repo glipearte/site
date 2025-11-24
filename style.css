@@ -1,0 +1,425 @@
+/* Variáveis CSS para Paleta de Cores e Tipografia */
+:root {
+    --color-primary: #007BFF; /* Azul Principal */
+    --color-secondary: #28A745; /* Verde de Destaque/Sucesso */
+    --color-background: #F8F9FA; /* Fundo Claro */
+    --color-text: #333; /* Texto Principal Escuro */
+    --color-light: #FFF; /* Branco */
+    --font-family-primary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* Reset Básico e Tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+/* Botão CTA Padrão */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color var(--transition-speed), transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Tom mais escuro do primário */
+    transform: translateY(-2px);
+}
+
+/* 1. Cabeçalho e Navegação */
+.main-header {
+    background-color: var(--color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 60px; /* Tamanho da Logo */
+    transition: transform var(--transition-speed);
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 25px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    color: var(--color-text);
+}
+
+.nav-link::after { /* Microinteração de underline */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width var(--transition-speed) ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none; /* Escondido por padrão em desktops */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+/* 2. Seções Principais (Conteúdo Dinâmico) */
+.page-content {
+    min-height: 70vh;
+    padding: 60px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.page-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Home Section (Hero) */
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('hero-background.jpg'); /* Substitua por imagem real */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+    color: var(--color-primary);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Grid de Serviços/Kits */
+.kits-grid, .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.kit-card, .portfolio-item {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kit-card:hover, .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.kit-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.kit-card .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+}
+
+/* Quem Somos */
+.about-details {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.about-details h2 { color: var(--color-primary); }
+.about-text { flex: 2; }
+.about-image { flex: 1; }
+.about-image img { width: 100%; height: auto; border-radius: 8px; }
+
+/* 3. Formulário de Contato */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+/* 4. Rodapé */
+.main-footer {
+    background-color: var(--color-text);
+    color: #AAA;
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-links a, .payment-methods i {
+    color: var(--color-light);
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: color var(--transition-speed);
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+}
+
+.payment-methods p {
+    display: inline-block;
+    margin-right: 10px;
+}
+.payment-methods i {
+    font-size: 1.8rem;
+    margin-left: 5px;
+    color: var(--color-secondary);
+}
+
+/* 5. Responsividade (Media Queries) */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Esconde a navegação no mobile */
+        position: absolute;
+        top: 80px; /* Ajuste para altura do header */
+        left: 0;
+        right: 0;
+        background-color: var(--color-light);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .main-nav.active {
+        display: block; /* Mostra o menu quando ativo */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão hamburguer */
+    }
+
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-details {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+}
+
+/* Classe de animação para itens que entram na viewport */
+.animated-element {
+    /* Usando Animate.css para Fade-in Up */
+    visibility: hidden; 
+}
+.animated-element.show {
+    visibility: visible;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+/* Tabela de Orçamento */
+.budget-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-light);
+}
+
+.budget-table caption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    padding: 10px 0;
+}
+
+.budget-table th, .budget-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #EEE;
+}
+
+.budget-table th {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.budget-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.budget-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.budget-table .kit-name {
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.budget-table .price-value {
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: right;
+}
+
+/* Estilo para títulos de Orçamento */
+.budget-section h2 {
+    text-align: center;
+    color: var(--color-primary);
+    padding-bottom: 20px;
+}
+.budget-section h3 {
+    margin-top: 20px;
+    border-left: 5px solid var(--color-secondary);
+    padding-left: 10px;
+}
