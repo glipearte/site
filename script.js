@@ -54,7 +54,7 @@ const pages = {
                     <p>É a solução perfeita para quem busca personalizar a decoração com o próprio toque, economizando no frete e na montagem profissional.</p>
                 </div>
                 <div class="about-image animated-element">
-                    <img src="about-us-illustration.jpg" alt="Ilustração do conceito Pegue e Monte"> </div>
+                    <img src="conceito.png" alt="Ilustração do conceito Pegue e Monte"> </div>
             </div>
         </section>
     `,
@@ -354,4 +354,5 @@ window.addEventListener('DOMContentLoaded', () => {
     const initialPage = window.location.hash ? window.location.hash.substring(1) : 'home';
     history.replaceState({ page: initialPage }, '', `#${initialPage}`);
     renderPage(initialPage);
+
 });
