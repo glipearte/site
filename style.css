@@ -1,7 +1,7 @@
 /* Variáveis CSS para Paleta de Cores e Tipografia */
 :root {
-    --color-primary: #007BFF; /* Azul Principal */
-    --color-secondary: #28A745; /* Verde de Destaque/Sucesso */
+    --color-primary: #9D00FF; /* Roxo */
+    --color-secondary: #FFB5C0; /* Rosa */
     --color-background: #F8F9FA; /* Fundo Claro */
     --color-text: #333; /* Texto Principal Escuro */
     --color-light: #FFF; /* Branco */
@@ -422,4 +422,69 @@ a:hover {
     margin-top: 20px;
     border-left: 5px solid var(--color-secondary);
     padding-left: 10px;
+}:root {
+    /* Paleta inspirada na logo Glipearte */
+    --color-primary: #8E44AD; /* Roxo vibrante do gradiente */
+    --color-secondary: #F1C40F; /* Amarelo do gradiente */
+    --color-accent: #E84393; /* Rosa dos balões */
+    --color-blue: #3498DB; /* Azul dos balões */
+
+    --color-background: #FFF7FB; /* Fundo suave rosado */
+    --color-text: #3A275F; /* Roxo escuro para boa leitura */
+    --color-light: #FFFFFF;
+
+    --font-family-primary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --transition-speed: 0.3s;
 }
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* Links */
+a { color: var(--color-primary); transition: color var(--transition-speed); }
+a:hover { color: var(--color-accent); }
+
+/* Botão CTA */
+.cta-button {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.cta-button:hover { background-color: #732d91; }
+
+/* Header */
+.main-header {
+    background-color: var(--color-light);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.nav-link::after { background-color: var(--color-accent); }
+
+/* Hero */
+.hero-section h1 { color: var(--color-primary); }
+.hero-section p { color: #644a86; }
+
+/* Cards */
+.kit-card h3 { color: var(--color-primary); }
+.kit-card .price { color: var(--color-secondary); }
+
+/* Tabela */
+.budget-table th { background-color: var(--color-primary); }
+.budget-table .kit-name { color: var(--color-secondary); }
+.budget-table .price-value { color: var(--color-primary); }
+
+/* Footer */
+.main-footer {
+    background-color: var(--color-text);
+    color: #EEE;
+}
+.social-links a:hover { color: var(--color-secondary); }
+.payment-methods i { color: var(--color-accent); }
