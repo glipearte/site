@@ -143,9 +143,20 @@ function generateBudgetTable() {
                 <tr><td>Capa p/ 1 mesa</td><td>Não acompanha mesa</td><td class="price-value">60,00</td></tr>
                 <tr><td>Capa p/ 2 mesas</td><td>Não acompanha mesa</td><td class="price-value">75,00</td></tr>
                 <tr><th colspan="3">KIT BRONZE</th></tr>
-                <tr><td>Opção 1</td><td>Itens básicos</td><td class="price-value">70,00</td></tr>
-                <tr><td>Opção 2</td><td>Mini arco de balões</td><td class="price-value">130,00</td></tr>
-                <tr><td>Opção 3</td><td>Arco + fio de fada</td><td class="price-value">200,00</td></tr>
+                <tr><td>Opção 1</td><td>1 painel 50cm, 1 jarro, 3 bandejas, 1 boleira, 1 display</td><td class="price-value">70,00</td></tr>
+                <tr><td>Opção 2</td><td>1 painel 50cm, 1 jarro, 4 bandejas, 1 boleira, 2 displays, 1 mini-arco de balões</td><td class="price-value">130,00</td></tr>
+                <tr><td>Opção 3</td><td>1 painel 50cm, 1 jarro, 4 bandejas, 1 boleira, 3 displays, 1 mini-arco de balões com fio de fada (pisca-pisca) e mesa ripada quadrada.</td><td class="price-value">200,00</td></tr>
+                <tr><th colspan="3">KIT PRATA</th></tr>
+                <tr><td>1 painel redondo 1,20m, 3 cilindros, 1 jarro, 2 bandejas, 1 boleira, 1 boleira cake, 2 displays</td><td></td><td class="price-value">250,00</td></tr>
+                <tr><th colspan="3">KIT OURO</th></tr>
+                <tr><td>1 painel redondo 1,20m, 1 painel retangular 1,50m x 2,20m, 3 cilindros, 1 jarro, 3 bandejas, 1 boleira, 1 tapete, 2 displays</td><td></td><td class="price-value">350,00</td></tr>
+                <tr><th colspan="3">BALÕES</th></tr>
+                <tr><td>Caixa de Balão Presente</td><td></td><td class="price-value">15,00</td></tr>
+                <tr><td>Árvore de Natal</td><td></td><td class="price-value">55,00</td></tr>
+                <tr><td>Box de Balão Natalino 1</td><td></td><td class="price-value">35,00</td></tr>
+                <tr><td>Box de Balão Natalino 2</td><td></td><td class="price-value">40,00</td></tr>
+                <tr><td>Box de Balão Natalino 3</td><td></td><td class="price-value">65,00</td></tr>
+                <tr><td>Box de Balão Ano Novo Estrela Dourada<td></td></td><td class="price-value">45,00</td></tr>
             </tbody>
         </table>
     `;
