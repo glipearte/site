@@ -14,8 +14,8 @@ const pages = {
                 <p>Aluguel de kits "Pegue e Monte" para tornar seu evento inesquecível com elegância e economia.</p>
 
                 <!-- BOTÃO CORRIGIDO -->
-                <a href="#portfolio" class="cta-button" data-page="portfolio">
-                    Veja Nossos Kits de Decoração
+                <a href="https://drive.google.com/drive/folders/1K5yJ361jtUQf3QReyjWmUUArGkAy2c5g?usp=sharing" class="cta-button">
+                    Veja nosso portfólio completo de temas
                 </a>
             </div>
 
@@ -230,11 +230,29 @@ window.addEventListener('popstate', (e) => {
 });
 
 // Formulário
-document.addEventListener('submit', (e) => {
+document.addEventListener('submit', async (e) => {
     if (e.target.id === 'contactForm') {
         e.preventDefault();
-        alert('Mensagem enviada com sucesso!');
-        e.target.reset();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        try {
+            const db = firebase.firestore();
+            await db.collection("mensagens").add({
+                name, email, phone, message,
+                data: new Date().toISOString()
+            });
+
+            alert('Mensagem enviada com sucesso!');
+            e.target.reset();
+
+        } catch (error) {
+            console.error("Erro ao salvar:", error);
+            alert('Erro ao enviar mensagem! Tente novamente.');
+        }
     }
 });
 
