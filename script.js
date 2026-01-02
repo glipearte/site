@@ -67,17 +67,17 @@ const pages = {
 
             <div class="portfolio-grid">
                 <div class="portfolio-item animated-element">
-                   <a href="https://glipearte.github.io/site/kit_bronze.png> <img src="kit_bronze.png" alt="Kit Bronze" width="280" height="360"></a>
+                   <img src="kit_bronze.png" alt="Kit Bronze" width="280" height="360">
                     <h3>Kit Bronze</h3>
                     <p>Simples e impactante.</p>
                 </div>
                 <div class="portfolio-item animated-element">
-                   <a href="https://glipearte.github.io/site/kit_prata.png>   <img src="kit_prata.png" alt="Kit Prata" width="280" height="360"></a>
+                   <img src="kit_prata.png" alt="Kit Prata" width="280" height="360">
                     <h3>Kit Prata</h3>
                     <p>Destaque para painel redondo.</p>
                 </div>
                 <div class="portfolio-item animated-element">
-                   <a href="https://glipearte.github.io/site/kit_ouro.png> <img src="kit_ouro.png" alt="Kit Ouro" width="280" height="360"></a>
+                   <img src="kit_ouro.png" alt="Kit Ouro" width="280" height="360">
                     <h3>Kit Ouro</h3>
                     <p>Combinação com peças personalizadas.</p>
                 </div>
@@ -278,4 +278,5 @@ window.addEventListener('DOMContentLoaded', () => {
     history.replaceState({ page: initialPage }, '', `#${initialPage}`);
     renderPage(initialPage);
 });
+
 
