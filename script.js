@@ -67,17 +67,17 @@ const pages = {
 
             <div class="portfolio-grid">
                 <div class="portfolio-item animated-element">
-                   <img src="kit_bronze.png" alt="Kit Bronze" width="280" height="360">
+                   <img src="kit_bronze.jpg" alt="Kit Bronze" width="280" height="360">
                     <h3>Kit Bronze</h3>
                     <p>Simples e impactante.</p>
                 </div>
                 <div class="portfolio-item animated-element">
-                   <img src="kit_prata.png" alt="Kit Prata" width="280" height="360">
+                   <img src="kit_prata.jpg" alt="Kit Prata" width="280" height="360">
                     <h3>Kit Prata</h3>
                     <p>Destaque para painel redondo.</p>
                 </div>
                 <div class="portfolio-item animated-element">
-                   <img src="kit_ouro.png" alt="Kit Ouro" width="280" height="360">
+                   <img src="kit_ouro.jpg" alt="Kit Ouro" width="280" height="360">
                     <h3>Kit Ouro</h3>
                     <p>Combinação com peças personalizadas.</p>
                 </div>
@@ -278,5 +278,6 @@ window.addEventListener('DOMContentLoaded', () => {
     history.replaceState({ page: initialPage }, '', `#${initialPage}`);
     renderPage(initialPage);
 });
+
 
 
