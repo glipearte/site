@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Glipearte | Em Manutenção</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* =============================
+           VARIÁVEIS DE IDENTIDADE
+           (troca rápida de cores)
+        ============================== */
+        :root {
+            --cor-primaria: #e85d8f;
+            --cor-secundaria: #8b5fbf;
+            --cor-destaque: #ffd166;
+            --cor-fundo: #fde2e4;
+            --texto-principal: #444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--cor-fundo), #fff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 55px 35px;
+            border-radius: 32px;
+            max-width: 540px;
+            width: 100%;
+            box-shadow: 0 30px 50px rgba(0,0,0,0.15);
+            text-align: center;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+
+        @keyframes flutuar {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .icon {
+            font-size: 74px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: var(--cor-primaria);
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            color: var(--cor-secundaria);
+            font-size: 1.35rem;
+            margin-bottom: 22px;
+            font-weight: 500;
+        }
+
+        p {
+            color: var(--texto-principal);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 26px;
+        }
+
+        .progress {
+            background: #f2f2f2;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 14px;
+            margin-bottom: 28px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                var(--cor-primaria),
+                var(--cor-secundaria),
+                var(--cor-destaque)
+            );
+            animation: progresso 2.5s infinite;
+        }
+
+        @keyframes progresso {
+            0% { width: 30%; }
+            50% { width: 85%; }
+            100% { width: 30%; }
+        }
+
+        .footer {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 15px;
+        }
+
+        .footer strong {
+            color: var(--cor-primaria);
+        }
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =============================
+           BOTÃO WHATSAPP
+        ============================== */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            background: #25d366;
+            color: #fff;
+            padding: 14px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            transition: transform 0.3s, box-shadow 0.3s;
+            z-index: 999;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+        }
+
+        .whatsapp-btn span {
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .whatsapp-btn {
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon">🎉🎈</div>
+
+        <!-- Se quiser, aqui pode entrar o LOGO da Glipearte -->
+        <!-- <img src="logo-glipearte.png" alt="Glipearte" style="max-width:180px; margin-bottom:15px;"> -->
+
+        <h1>Glipearte</h1>
+        <h2>Estamos preparando algo especial para sua festa!</h2>
+
+        <p>
+            Nosso site está em manutenção para trazer ainda mais
+            inspirações, decorações encantadoras e soluções criativas
+            que transformam momentos em memórias inesquecíveis.
+        </p>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <p>
+            Voltamos em breve com muitas novidades ✨  
+            Obrigado pelo carinho 💖
+        </p>
+
+        <div class="footer">
+            © 2026 • <strong>Glipearte – Arte que transforma festas</strong>
+        </div>
+    </div>
+
+    <!-- BOTÃO WHATSAPP -->
+    <a 
+        href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20informações%20sobre%20decorações%20da%20Glipearte"
+        class="whatsapp-btn"
+        target="_blank"
+    >
+        <span>💬</span> Fale conosco
+    </a>
+
+</body>
+</html>
