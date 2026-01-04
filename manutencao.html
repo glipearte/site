@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Glipearte | Em Manutenção</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fde2e4, #fadadd, #fff1c1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 50px 35px;
+            border-radius: 30px;
+            max-width: 520px;
+            width: 100%;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+            text-align: center;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+
+        @keyframes flutuar {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .icon {
+            font-size: 72px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #e85d8f;
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #8b5fbf;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .progress {
+            background: #f3f3f3;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 14px;
+            margin-bottom: 25px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 60%;
+            background: linear-gradient(90deg, #e85d8f, #f4a261, #ffd166);
+            animation: progresso 2.5s infinite;
+        }
+
+        @keyframes progresso {
+            0% { width: 25%; }
+            50% { width: 85%; }
+            100% { width: 25%; }
+        }
+
+        .footer {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .footer strong {
+            color: #e85d8f;
+        }
+
+        .contato {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .contato span {
+            color: #8b5fbf;
+            font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon">🎈🎉</div>
+
+        <h1>Glipearte</h1>
+        <h2>Estamos preparando algo lindo para você!</h2>
+
+        <p>
+            Nosso site está passando por uma manutenção especial para
+            trazer ainda mais ideias criativas, decorações encantadoras
+            e soluções completas para sua festa.
+        </p>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <p>
+            Em breve estaremos de volta com muitas novidades! ✨  
+            Obrigado pela sua visita e carinho 💖
+        </p>
+
+        <div class="contato">
+            📲 Enquanto isso, fale conosco pelo  
+            <span>WhatsApp ou Instagram</span>
+        </div>
+
+        <div class="footer">
+            © 2026 • <strong>Glipearte – Arte que transforma festas</strong>
+        </div>
+    </div>
+
+</body>
+</html>
