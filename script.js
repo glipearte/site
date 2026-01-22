@@ -67,19 +67,29 @@ const pages = {
 
             <div class="portfolio-grid">
                 <div class="portfolio-item animated-element">
-                   <img src="kit_bronze.jpg" alt="Kit Bronze" width="280" height="360">
-                    <h3>Kit Bronze</h3>
+                   <img src="kit-basico.jpg" alt="Kit Básico" width="280" height="360">
+                    <h3>Kit Básico</h3>
                     <p>Simples e impactante.</p>
                 </div>
                 <div class="portfolio-item animated-element">
-                   <img src="kit_prata.jpg" alt="Kit Prata" width="280" height="360">
-                    <h3>Kit Prata</h3>
-                    <p>Destaque para painel redondo.</p>
+                   <img src="kit-charme.jpg" alt="Kit Charme" width="280" height="360">
+                    <h3>Kit Charme</h3>
+                    <p>Deixa seu evento mais bonito.</p>
                 </div>
                 <div class="portfolio-item animated-element">
-                   <img src="kit_ouro.jpg" alt="Kit Ouro" width="280" height="360">
-                    <h3>Kit Ouro</h3>
-                    <p>Combinação com peças personalizadas.</p>
+                   <img src="kit-encanto.jpg" alt="Kit Encanto" width="280" height="360">
+                    <h3>Kit Encanto</h3>
+                    <p>Sofisticação e beleza com simplicidade.</p>
+                </div>
+                <div class="portfolio-item animated-element">
+                   <img src="kit-elegance.jpg" alt="Kit Elegance" width="280" height="360">
+                    <h3>Kit Elegance</h3>
+                    <p>Sofisticação com um preço especial.</p>
+                </div>
+                <div class="portfolio-item animated-element">
+                   <img src="kit-premium.jpg" alt="Kit Premium" width="280" height="360">
+                    <h3>Kit Premium</h3>
+                    <p>Para pessoas de bom gosto.</p>
                 </div>
             </div>
         </section>
