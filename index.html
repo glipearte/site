@@ -3,61 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glipearte Pegue e Monte - Aluguel de kits para festas com economia e elegância. Festas incríveis começam aqui!">
+    <meta name="keywords" content="festas, aluguel, kits, decoração, pegue e monte, eventos, economia">
+    <meta name="author" content="Glipearte Pegue e Monte">
+    <meta name="robots" content="index, follow">
+    
     <title>Glipearte Pegue e Monte - Festas Incríveis Começam Aqui</title>
-
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Glipearte Pegue e Monte - Festas Incríveis">
+    <meta property="og:description" content="Aluguel de kits 'Pegue e Monte' para tornar seu evento inesquecível com elegância e economia.">
+    <meta property="og:image" content="glipearte-og-image.jpg">
+    <meta property="og:url" content="https://glipearte.com.br">
+    <meta property="og:type" content="website">
 </head>
-<body>
 
-    <header class="main-header">
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="main-header" role="banner">
         <div class="container">
-            <a href="#home" class="logo" data-page="home">
-                <img src="glipeartelogo.png" alt="Logo Glipearte Pegue e Monte">
-            </a>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link" data-page="home">Home</a></li>
-                    <li><a href="#quemsomos" class="nav-link" data-page="quemsomos">Quem Somos</a></li>
-                    <li><a href="#portfolio" class="nav-link" data-page="portfolio">Portfólio</a></li>
-                    <li><a href="#orcamento" class="nav-link" data-page="orcamento">Orçamento/Kits</a></li>
-                    <li><a href="#contato" class="nav-link" data-page="contato">Contato</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" aria-label="Abrir Menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="header-content">
+                <a href="#home" class="logo" data-page="home" aria-label="Logo Glipearte - Voltar para home">
+                    <img src="glipeartelogo.png" alt="Logo Glipearte Pegue e Monte" width="120" height="60">
+                </a>
+                
+                <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+                    <ul class="nav-list" role="list">
+                        <li role="listitem">
+                            <a href="#home" class="nav-link" data-page="home" aria-current="page">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a href="#quemsomos" class="nav-link" data-page="quemsomos">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                                Quem Somos
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a href="#portfolio" class="nav-link" data-page="portfolio">
+                                <i class="fas fa-images" aria-hidden="true"></i>
+                                Portfólio
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a href="#orcamento" class="nav-link" data-page="orcamento">
+                                <i class="fas fa-calculator" aria-hidden="true"></i>
+                                Orçamento/Kits
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a href="#contato" class="nav-link" data-page="contato">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main id="app-content" class="container"></main>
+    <main id="main-content" class="container">
+        <div id="app-content" aria-live="polite" aria-busy="false">
+            <!-- Conteúdo dinâmico será carregado aqui -->
+        </div>
+    </main>
 
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <p>&copy; 2025 Glipearte Pegue e Monte. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="https://wa.me/5585986853750" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://instagram.com/glipearte" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61570541947090&locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div class="payment-methods">
-                <p>Aceitamos:</p>
-                <img src="visa.png" title="Cartão Visa">
-                <img src="master.png" title="Cartão Mastercard">
-                <img src="amex.png" title="Cartão American Express">
-                <img src="elo.png" title="Cartão Elo" height= "30px">
-                <img src="hipercard.png" title="Cartão Hipercard" height= "30px">
-                <img src="pix.png" title="Pix">
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Glipearte Pegue e Monte</h3>
+                    <p>&copy; 2025 Glipearte Pegue e Monte. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links" role="list">
+                        <a href="https://wa.me/5585986853750" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" role="listitem">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://instagram.com/glipearte" target="_blank" rel="noopener noreferrer" aria-label="Instagram" role="listitem">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61570541947090&locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook" role="listitem">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Formas de Pagamento</h4>
+                    <div class="payment-methods" role="list">
+                        <div class="payment-method" role="listitem">
+                            <img src="visa.png" alt="Cartão Visa" width="40" height="25">
+                        </div>
+                        <div class="payment-method" role="listitem">
+                            <img src="master.png" alt="Cartão Mastercard" width="40" height="25">
+                        </div>
+                        <div class="payment-method" role="listitem">
+                            <img src="amex.png" alt="Cartão American Express" width="40" height="25">
+                        </div>
+                        <div class="payment-method" role="listitem">
+                            <img src="elo.png" alt="Cartão Elo" width="40" height="25">
+                        </div>
+                        <div class="payment-method" role="listitem">
+                            <img src="hipercard.png" alt="Cartão Hipercard" width="40" height="25">
+                        </div>
+                        <div class="payment-method" role="listitem">
+                            <img src="pix.png" alt="Pix" width="40" height="25">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- 🔥 Firebase v8 (compatível com seu script atual) -->
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay" aria-hidden="true">
+        <div class="loading-spinner" role="status">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
+
+    <!-- Firebase v8 (compatível com o script atual) -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
     <script>
+        // Configuração do Firebase
         const firebaseConfig = {
             apiKey: "AIzaSyCvF7zflaoHFyk0AD8yaj5AR0yKYQQQ2qs",
             authDomain: "site-glipearte.firebaseapp.com",
@@ -68,12 +167,18 @@
             measurementId: "G-E7B04ELNR5"
         };
 
+        // Inicializar Firebase
         firebase.initializeApp(firebaseConfig);
+        
+        // Adicionar suporte offline
+        if (firebase.firestore) {
+            firebase.firestore().enablePersistence()
+                .catch((err) => {
+                    console.log('Persistência offline não disponível:', err);
+                });
+        }
     </script>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
